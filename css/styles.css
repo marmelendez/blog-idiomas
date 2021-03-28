@@ -8,10 +8,10 @@ font-family: 'Work Sans', sans-serif;
     --mainFont: 'Raleway', sans-serif;
 
     --white: #fff;
-    --black: #000;
-    --green: #FBFF12;
-    --pink: #FF206E;
-    --blue: #41EAD4;
+    --black: rgb(0, 0, 0);
+    --green: rgb(184, 255, 18);
+    --pink: rgb(255, 32, 110);
+    --blue: rgb(65, 234, 212);
 }
 
 html {
@@ -76,3 +76,58 @@ img {
 .text-center {
     text-align: center;
 }
+
+/*---------- Header ----------*/
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(65, 234, 212, 0.7)), url(../img/cover.jpg) no-repeat; 
+    height: 60rem;
+    background-size: cover;
+    background-position: center center; /*doble center porque se centra vertical y horizontalmente*/
+}
+
+.header__texto {
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+}
+
+.logo {
+    color: var(--blue);
+}
+
+.logo__name {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.logo__bold {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.nav__link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+

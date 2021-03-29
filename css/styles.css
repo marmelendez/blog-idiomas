@@ -254,3 +254,12 @@ img {
         margin-left: 2rem;
     }
 }
+
+/*---------- Entrada ----------*/
+@media (min-width: 768px) {
+    .entrada__img{
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+}

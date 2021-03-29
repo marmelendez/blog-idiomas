@@ -263,3 +263,12 @@ img {
         width: 60%;
     }
 }
+
+/*---------- Contacto ----------*/
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

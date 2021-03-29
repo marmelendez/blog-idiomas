@@ -81,11 +81,20 @@ img {
 }
 
 /*---------- Header ----------*/
-.header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(65, 234, 212, 0.7)), url(../img/cover.jpg) no-repeat; 
-    height: 45rem;
+.webp .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(65, 234, 212, 0.7)), url(../img/cover.webp) no-repeat; 
     background-size: cover;
-    background-position: center center; /*doble center porque se centra vertical y horizontalmente*/
+    background-position: center center; 
+}
+
+.no-webp .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(65, 234, 212, 0.7)), url(../img/cover.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center center; 
+}
+
+.header {
+    height: 45rem;/*doble center porque se centra vertical y horizontalmente*/
 }
 
 .header__texto {

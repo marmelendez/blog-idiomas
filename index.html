@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    
     <title>Blog Idiomas</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Work+Sans&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -36,7 +45,10 @@
             <h3>Nuestro blog</h3>
             <article class="entry">
                 <div class="entry__img">
-                    <img src="/img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entry__content">
                     <h4 class= "no-margin">¡Prepárate! Becas en el extranjero</h4>
@@ -47,7 +59,10 @@
 
             <article class="entry">
                 <div class="entry__img">
-                    <img src="/img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entry__content">
                     <h4 class= "no-margin">Prueba tu inglés con estos test gratis en línea</h4>
@@ -58,7 +73,10 @@
 
             <article class="entry">
                 <div class="entry__img">
-                    <img src="/img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entry__content">
                     <h4 class= "no-margin">Los mejores libros para aprender francés</h4>
@@ -132,5 +150,6 @@
         </div>
     </footer>
     
+    <script src="js/modernizr.js"></script>
 </body>
 </html>

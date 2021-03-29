@@ -167,12 +167,17 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .button {
         display: inline-block;
     }
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .primary--button {
@@ -267,8 +272,38 @@ img {
 /*---------- Contacto ----------*/
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
-    height: 50rem;
+    height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+/*---------- Formulario de contacto ----------*/
+.form {
+    background-color: var(--gray);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: -10rem auto 0 auto;
+    width: 90%;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.field__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.field__area {
+    flex: 1;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.field__area--textarea {
+    height: 20rem;
 }

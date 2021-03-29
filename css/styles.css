@@ -135,6 +135,10 @@ img {
     color: var(--white);
 }
 
+.nav__link:hover{
+    color: var(--green);
+}
+
 /*---------- Nuestro blog(main) ----------*/
 @media (min-width: 768px) {
     .main-container {
@@ -205,4 +209,32 @@ img {
 .footer {
     background-color: var(--black);
     padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/*---------- Sobre nosotros ----------*/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*factor de crecimiento distribucion de width
+    por cada vez que un elemento toma 1px el otro toma 2px
+    .sobre-nosotros__texto {
+        flex: 2; 
+    }
+
+    .sobre-nosotros__img {
+        flex: 1;
+    }*/
+
+    .sobre-nosotros__img,
+    .sobre-nosotros__texto {
+        flex-basis: calc(50% - 1rem); /*width de img cuando tienes flexbox*/
+    } 
+
+    .sobre-nosotros__texto p:first-of-type {
+        margin-top: 0;
+    }
 }

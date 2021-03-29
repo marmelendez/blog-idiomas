@@ -12,6 +12,7 @@ font-family: 'Work Sans', sans-serif;
     --green: rgb(184, 255, 18);
     --pink: rgb(255, 32, 110);
     --blue: rgb(65, 234, 212);
+    --gray: #f6f6f6;
 }
 
 html {
@@ -42,6 +43,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--mainFont);
+    line-height: 1.2;
 }
 
 h1 {
@@ -80,7 +82,7 @@ img {
 /*---------- Header ----------*/
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(65, 234, 212, 0.7)), url(../img/cover.jpg) no-repeat; 
-    height: 60rem;
+    height: 45rem;
     background-size: cover;
     background-position: center center; /*doble center porque se centra vertical y horizontalmente*/
 }
@@ -88,12 +90,12 @@ img {
 .header__texto {
     color: white;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
     .header__texto {
-        margin-top: 15rem;
+        margin-top: 13rem;
     }
 
     .bar {
@@ -131,7 +133,7 @@ img {
     color: var(--white);
 }
 
-/*---------- Nuestro blog ----------*/
+/*---------- Nuestro blog(main) ----------*/
 @media (min-width: 768px) {
     .main-container {
         display:grid;
@@ -141,7 +143,7 @@ img {
 }
 
 .entry {
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--gray);
     margin-bottom: 2rem;
 }
 
@@ -169,4 +171,30 @@ img {
 
 .primary--button {
     background-color: var(--green);
+}
+
+/*---------- Comienza a aprender (aside) ----------*/
+.secondary--button {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.course {
+    list-style: none;
+}
+
+.widget-course {
+    background-color: var(--gray);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.widget-course__label {
+    font-family: var(--mainFont);
+    font-weight: 700;
+}
+
+.widget-course__info {
+    font-weight: 400;
 }

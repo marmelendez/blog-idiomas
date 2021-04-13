@@ -279,6 +279,19 @@ img {
 }
 
 /*---------- Contacto ----------*/
+.error {
+    background-color:var(--pink);
+    text-align: center;
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+.enviado {
+    background-color:var(--green);
+    text-align: center;
+    border-radius: 1rem;
+}
+
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
     height: 40rem;

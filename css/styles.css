@@ -222,6 +222,11 @@ img {
     font-weight: 400;
 }
 
+.widget-course a {
+    text-align:center;
+    display:block;
+}
+
 /*---------- Footer ----------*/
 .footer {
     background-color: var(--black);
